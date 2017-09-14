@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<!-- Utilizar o Modals ou Collapsible!-->
+			<meta charset="utf-8">
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<link rel="stylesheet" type="text/css" href="css/index.css">
+			<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+			<title>Banco</title>
+		</head>
+		<body>
+
+			<nav>
+			    <div class="nav-wrapper">
+			    	<a class="brand-logo center">Banco</a>
+				</div>
+			</nav>
+			<div class="container">
+				<center><h1>Saldo<h1 id="saldo_inicial">R$ 0.00</h1></h1><center>
+				<ul class="collapsible" data-collapsible="accordion">
+				    <li>
+				    	<div class="collapsible-header"><i class="material-icons">wc</i>Clientes</div>
+				    	<div class="collapsible-body">
+				    		<div class="row">
+
+							</div>
+				    	</div>
+				    </li>
+				    <li>
+				    	<div class="collapsible-header"><i class="material-icons">add_circle</i>Abrir Conta</div>
+				    	<div class="collapsible-body">
+				    		<div class="row">
+				    			<div class="input-field col s6">
+							      <input value="Nome" id="nome_cliente" type="text" class="validate">
+							      <label class="active" for="nome_cliente">Nome</label>
+							    </div>
+
+				    			<div class="input-field col s6">
+							      <input value="CPF" id="cpf_cliente" type="text" class="validate">
+							      <label class="active" for="cpf_cliente">CPF</label>
+							    </div>
+							    <a id="botao_cadastro" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">done</i></a>
+							</div>
+				    	</div>
+				    </li>
+
+
+
+
+				    <li>
+				    	<div class="collapsible-header"><i class="material-icons">remove_circle</i>Fechar Conta</div>
+				    	<div class="collapsible-body">
+				    		<div class="row">
+
+									<div class="input-field col s6">
+							      <input value="Nome" id="nome_excliente" type="text" class="validate">
+							      <label class="active" for="nome_excliente">Nome</label>
+							    </div>
+
+				    			<div class="input-field col s6">
+							      <input value="CPF" id="cpf_excliente" type="text" class="validate">
+							      <label class="active" for="cpf_excliente">CPF</label>
+							    </div>
+							    <a id="botao_sair" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">done</i></a>
+							</div>
+				    	</div>
+				    </li>
+				    <li>
+				    	<div class="collapsible-header"><i class="material-icons">account_circle</i>Cliente</div>
+				    	<div class="collapsible-body">
+					    	<table>
+											<div class="input-field col s6">
+									      <input value="Nome" id="nome" type="text" class="validate">
+									      <label class="active" for="nome">Nome</label>
+									    </div>
+											<div class="input-field col s6">
+									      <input value="000.000.000-00" id="cpf" type="text" class="validate">
+									      <label class="active" for="altera_saldo">CPF</label>
+									    </div>
+						        <tbody id="historico">
+
+						    	</tbody>
+						    </table>
+				    	</div>
+				    </li>
+				</ul>
+			</div>
+
+
+
+			<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+			<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+			<script type="text/javascript" src="js/index.js"></script>
+		</body>
+	</html>
